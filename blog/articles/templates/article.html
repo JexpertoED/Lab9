@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Статья &mdash; {{ post.title }}</title>
+    <link rel="stylesheet" href="/static/css/article.css" type="text/css">
+    <link rel="icon" href="/static/img/fire.png" sizes="16x16 32x32 64x64 128x128" type="image/png">
+</head>
+<body class="article">
+<div class="header">
+    <img src="/static/img/dpb-logo_purple.png"/>
+    <a href="/">Все статьи</a>
+</div>
+<div class="one-post">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <div class="article-info">
+        <div class="article-author">{{ post.author.username }}</div>
+        <div class="article-created-date">{{ post.created_date }}</div>
+    </div>
+    <p class="article-text">{{ post.text }}</p>
+</div>
+</body>
+</html>
